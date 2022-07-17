@@ -14,9 +14,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Basedtez/Note-taker/issues"
+    "url": "https://github.com/Basedtez/Note-taker.git/issues"
   },
-  "homepage": "https://github.com/Basedtez/Note-taker#readme",
+  "homepage": "https://github.com/coding-boot-camp/miniature-eureka#readme",
   "dependencies": {
     "express": "^4.18.1"
   }
