@@ -1,12 +1,14 @@
+// dependencies for require
 const PORT = process.env.PORT || 3001;
 const fs = require('fs');
 const path = require('path');
 
+// Initialize express app
 const express = require('express');
 const app = express();
 
 const allNotes = require('./db/db.json');
-
+// data parsing 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
@@ -71,7 +73,7 @@ app.delete('/api/notes/:id', (req, res) => {
     deleteNote(req.params.id, allNotes);
     res.json(true);
 });
-
+// listerner for notes app
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });
